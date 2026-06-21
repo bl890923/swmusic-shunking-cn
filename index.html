@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- ========== TKD 搜索引擎优化元数据 ========== -->
+    <!-- Title: 页面标题（已优化） -->
+    <title>舜王音频处理器 · 永久免费的专业音频工具 - 成都舜王科技有限公司互联网事业部</title>
+
+    <!-- Keywords: 页面关键词（搜索关键词覆盖） -->
+    <meta name="keywords" content="舜王音频处理器,音频剪辑,音频编辑,音频转换,批量处理,音频工具,永久免费,专业音频,波形裁剪,均衡器,降噪,格式转换,MP3,WAV,FLAC,播客制作,音乐制作,铃声制作,有声读物,成都舜王科技">
+
+    <!-- Description: 页面描述（搜索结果摘要） -->
+    <meta name="description" content="舜王音频处理器 — 永久免费的专业音频工作站。支持智能裁剪、专业音效、多格式转换、批量处理，本地运行保护隐私安全。适用于播客、音乐、教育、铃声制作等场景。立即下载体验！">
+
+    <!-- 补充：针对搜索引擎的优化 -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.shunking.com/audio-processor/">
+    <!-- ========================================== -->
+
+    <!-- Tailwind CSS + Font Awesome 6 -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap');
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        /* 顶部焦点图背景：紫色+蓝色渐变 + 斜向条纹动画 */
+        .hero-animated-bg {
+            background: linear-gradient(125deg, #4c1d95, #3b82f6, #8b5cf6, #2563eb);
+            background-size: 300% 300%;
+            position: relative;
+            animation: heroFlow 12s ease infinite;
+        }
+        .hero-animated-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(45deg,
+                    rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 40px,
+                    transparent 40px, transparent 80px);
+            pointer-events: none;
+            z-index: 1;
+        }
+        @keyframes heroFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .feature-card {
+            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 35px -12px rgba(79, 70, 229, 0.25);
+            border-color: #4F46E5;
+        }
+        .feature-card:hover .feature-icon {
+            transform: scale(1.05);
+            color: #4F46E5;
+        }
+        .feature-icon {
+            transition: transform 0.2s ease, color 0.2s;
+            display: inline-block;
+        }
+        .scene-card {
+            transition: all 0.25s ease;
+        }
+        .scene-card:hover {
+            transform: translateY(-5px);
+            background: #4F46E5;
+            color: white;
+        }
+        .scene-card:hover i,
+        .scene-card:hover h3,
+        .scene-card:hover p {
+            color: white;
+        }
+        .stat-card {
+            transition: all 0.3s;
+        }
+        .stat-card:hover {
+            transform: scale(1.02);
+            background: linear-gradient(135deg, #4F46E5, #7C3AED);
+            color: white;
+        }
+        .stat-card:hover .stat-number,
+        .stat-card:hover .stat-label {
+            color: white;
+        }
+        .testimonial-card {
+            transition: all 0.3s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
+            background: #faf5ff;
+        }
+        .btn-glow {
+            transition: all 0.2s;
+        }
+        .btn-glow:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px -5px rgba(79, 70, 229, 0.4);
+        }
+        .ad-banner {
+            background: linear-gradient(115deg, #f59e0b, #d97706);
+        }
+        .footer-link {
+            transition: color 0.2s;
+        }
+        .footer-link:hover {
+            color: #4F46E5;
+        }
+        .glass-card {
+            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        /* 焦点图文字行距加大 */
+        .hero-title {
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+        .hero-desc {
+            line-height: 1.7;
+        }
+        .hero-badge {
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body class="bg-white antialiased">
+
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-waveform text-2xl text-indigo-600"></i>
+                <span class="font-bold text-xl bg-gradient-to-r from-indigo-700 to-purple-600 bg-clip-text text-transparent">舜王音频处理器</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <a href="#features" class="hover:text-indigo-600 transition">核心功能</a>
+                <a href="#scenes" class="hover:text-indigo-600 transition">适用场景</a>
+                <a href="#advantages" class="hover:text-indigo-600 transition">技术优势</a>
+                <a href="#reviews" class="hover:text-indigo-600 transition">用户评价</a>
+            </div>
+            <a href="#download" class="hidden md:block bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-md btn-glow">
+                <i class="fas fa-download mr-1"></i> 免费下载
+            </a>
+            <button id="mobileMenuBtn" class="md:hidden text-gray-600 text-2xl"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
+            <a href="#features" class="block text-gray-700 hover:text-indigo-600">核心功能</a>
+            <a href="#scenes" class="block text-gray-700 hover:text-indigo-600">适用场景</a>
+            <a href="#advantages" class="block text-gray-700 hover:text-indigo-600">技术优势</a>
+            <a href="#reviews" class="block text-gray-700 hover:text-indigo-600">用户评价</a>
+            <a href="#download" class="inline-block bg-indigo-600 text-white px-5 py-2 rounded-full text-center">免费下载</a>
+        </div>
+    </nav>
+
+    <!-- 顶部焦点图区域 - 紫色蓝色渐变+条纹动画背景，文字行距加大 -->
+    <section class="hero-animated-bg py-20 md:py-28 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm font-medium mb-6 shadow-sm hero-badge">
+                    <i class="fas fa-gem text-white"></i> 永久免费 · 专业级音频工作站
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg hero-title">
+                    舜王音频处理器 <br> <span class="bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text text-transparent">剪辑·编辑·转换·批量</span>
+                </h1>
+                <p class="text-indigo-50 text-lg md:text-xl mt-6 max-w-2xl mx-auto drop-shadow-md hero-desc">
+                    智能裁剪、专业音效、格式转换、批量处理 —— 完全免费，本地运行，极致安全。
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-10">
+                    <a href="#download" class="bg-white text-indigo-700 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold shadow-lg flex items-center gap-2 transition btn-glow">
+                        <i class="fas fa-download"></i> 永久免费下载
+                    </a>
+                    <a href="#features" class="border border-white/40 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white px-8 py-3 rounded-full font-semibold transition flex items-center gap-2">
+                        <i class="fas fa-play-circle"></i> 探索功能
+                    </a>
+                </div>
+                <div class="mt-12 flex justify-center gap-8 text-white/80 text-sm">
+                    <span><i class="fas fa-check-circle text-white"></i> 无需注册</span>
+                    <span><i class="fas fa-check-circle text-white"></i> 本地处理隐私安全</span>
+                    <span><i class="fas fa-check-circle text-white"></i> 支持MP3/WAV/FLAC/AAC</span>
+                </div>
+            </div>
+            <!-- 预览卡片 -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <div class="glass-card rounded-2xl shadow-2xl p-4 backdrop-blur-sm animate-float">
+                    <div class="bg-white/90 rounded-xl p-4 flex items-center gap-4 text-gray-700">
+                        <i class="fas fa-waveform text-4xl text-indigo-500"></i>
+                        <div class="flex-1 h-12 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 rounded-full relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-pulse"></div>
+                        </div>
+                        <i class="fas fa-scissors text-indigo-500 text-xl"></i>
+                        <i class="fas fa-sliders-h text-indigo-500 text-xl"></i>
+                        <i class="fas fa-exchange-alt text-indigo-500 text-xl"></i>
+                        <i class="fas fa-files-o text-indigo-500 text-xl"></i>
+                    </div>
+                    <div class="flex justify-between mt-3 text-xs text-gray-500 px-2">
+                        <span>波形可视化 · 毫秒级精度</span>
+                        <span>AI静音检测</span>
+                        <span>5段均衡器</span>
+                        <span>批量并行处理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心功能区域 (图标重新配置，确保显示) -->
+    <section id="features" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">✨ 核心功能 · 全能音频工作站</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">集剪辑、编辑、转换、批处理于一体，永久免费使用</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-indigo-200 transition-all">
+                    <div class="feature-icon text-4xl text-indigo-500 mb-4"><i class="fas fa-cut"></i></div>
+                    <h3 class="text-xl font-bold mb-2">智能音频裁剪</h3>
+                    <p class="text-gray-500">波形可视化拖拽，毫秒级精度；支持多片段批量导出。</p>
+                    <ul class="mt-4 space-y-1 text-sm text-gray-500">
+                        <li><i class="fas fa-check-circle text-indigo-400 w-4"></i> AI静音检测自动分割</li>
+                        <li><i class="fas fa-check-circle text-indigo-400 w-4"></i> 歌词完整性优先策略</li>
+                        <li><i class="fas fa-check-circle text-indigo-400 w-4"></i> 一键导出所有片段</li>
+                    </ul>
+                </div>
+                <div class="feature-card bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-indigo-200">
+                    <div class="feature-icon text-4xl text-indigo-500 mb-4"><i class="fas fa-sliders-h"></i></div>
+                    <h3 class="text-xl font-bold mb-2">专业音频编辑</h3>
+                    <p class="text-gray-500">音量/均衡器/淡入淡出/反转/降噪/回声/混响等效果。</p>
+                    <ul class="mt-4 space-y-1 text-sm text-gray-500">
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 5段专业均衡器</li>
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 速度/音调独立调节</li>
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 片段拼接合并</li>
+                    </ul>
+                </div>
+                <div class="feature-card bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-indigo-200">
+                    <div class="feature-icon text-4xl text-indigo-500 mb-4"><i class="fas fa-exchange-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-2">多格式转换</h3>
+                    <p class="text-gray-500">MP3 / WAV / FLAC / AAC / OGG 互转，可调比特率/采样率。</p>
+                    <ul class="mt-4 space-y-1 text-sm text-gray-500">
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 批量转换队列</li>
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 保留元数据标签</li>
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 实时进度显示</li>
+                    </ul>
+                </div>
+                <div class="feature-card bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-indigo-200">
+                    <div class="feature-icon text-4xl text-indigo-500 mb-4"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="text-xl font-bold mb-2">批量处理引擎</h3>
+                    <p class="text-gray-500">同时处理数百个文件，统一裁剪/转换/音量/标签。</p>
+                    <ul class="mt-4 space-y-1 text-sm text-gray-500">
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 批量重命名 & 输出路径</li>
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 覆盖/跳过策略</li>
+                        <li><i class="fas fa-check-circle text-indigo-400"></i> 高效并行处理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 高级特性区域 -->
+    <section class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-gray-900">🔥 更多专业特性</h2>
+                <p class="text-gray-500 mt-2">让音频处理更智能、更高效</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="font-bold text-lg mb-2">实时频谱可视化</h3>
+                    <p class="text-gray-500">动态频率分析，直观了解音频频谱分布。</p>
+                </div>
+                <div class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition"><i class="fas fa-microphone-alt"></i></div>
+                    <h3 class="font-bold text-lg mb-2">AI 智能静音检测</h3>
+                    <p class="text-gray-500">自动识别静音段落，一键移除空白区域。</p>
+                </div>
+                <div class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition"><i class="fas fa-music"></i></div>
+                    <h3 class="font-bold text-lg mb-2">歌词完整性优先切割</h3>
+                    <p class="text-gray-500">根据歌词边界智能分割，确保语义完整。</p>
+                </div>
+                <div class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition"><i class="fas fa-sliders-h"></i></div>
+                    <h3 class="font-bold text-lg mb-2">5段专业均衡器</h3>
+                    <p class="text-gray-500">60Hz~16kHz 精确调节，预置多种音效。</p>
+                </div>
+                <div class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition"><i class="fas fa-file-audio"></i></div>
+                    <h3 class="font-bold text-lg mb-2">无损导出 & 多格式</h3>
+                    <p class="text-gray-500">支持FLAC/WAV无损，最高320kbps MP3。</p>
+                </div>
+                <div class="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition"><i class="fas fa-video"></i></div>
+                    <h3 class="font-bold text-lg mb-2">视频提取音频</h3>
+                    <p class="text-gray-500">支持MP4/MOV等，一键提取背景音乐或对白。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 通栏广告 · 放在“适用场景”上方 · 带服务热线 -->
+    <div class="ad-banner text-white py-6 px-4 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+        <div class="flex items-center gap-2 text-lg font-semibold">
+            <i class="fas fa-gift text-2xl"></i> 舜王音频处理器 · 永久免费使用与下载
+        </div>
+        <div class="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-2 rounded-full text-sm md:text-base">
+            <i class="fas fa-phone-alt"></i> 服务热线：400-999-0004
+        </div>
+        <div>
+            <span class="bg-white text-indigo-800 px-4 py-1 rounded-full text-sm font-semibold">无任何收费陷阱</span>
+        </div>
+    </div>
+
+    <!-- 适用场景 (8个场景卡片，均有悬停互动) -->
+    <section id="scenes" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-gray-900">🎯 适用场景</h2>
+                <p class="text-gray-500 mt-2">无论是创作者、播客、音乐人还是普通用户，都能找到高效用法</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-microphone-alt text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">播客剪辑</h3>
+                    <p class="text-sm text-gray-500 mt-1">去噪、淡入淡出、片段拼接</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-music text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">音乐制作</h3>
+                    <p class="text-sm text-gray-500 mt-1">歌曲分段、均衡器调节、格式转换</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-chalkboard-user text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">教育培训</h3>
+                    <p class="text-sm text-gray-500 mt-1">课件音频剪辑、批量格式统一</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-volume-up text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">铃声制作</h3>
+                    <p class="text-sm text-gray-500 mt-1">精准裁剪高潮片段，导出MP3</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-headphones text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">有声读物</h3>
+                    <p class="text-sm text-gray-500 mt-1">长音频分割、音量均衡</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-video text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">视频配音</h3>
+                    <p class="text-sm text-gray-500 mt-1">提取视频音频，背景音乐替换</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-broadcast-tower text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">电台广播</h3>
+                    <p class="text-sm text-gray-500 mt-1">节目剪辑、片头片尾制作</p>
+                </div>
+                <div class="scene-card bg-gray-50 rounded-2xl p-6 text-center transition border border-gray-100">
+                    <i class="fas fa-folder-open text-3xl text-indigo-500 mb-3"></i>
+                    <h3 class="font-semibold">批量归档</h3>
+                    <p class="text-sm text-gray-500 mt-1">千份音频统一格式/标签</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术优势 & 数据对比 -->
+    <section id="advantages" class="py-20 px-6 bg-gradient-to-br from-indigo-50 to-purple-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-gray-900">📊 为什么选择舜王音频处理器？</h2>
+                <p class="text-gray-600 mt-2">轻量、专业、完全免费，本地化处理更安全</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="stat-card bg-white rounded-2xl p-8 text-center shadow-md">
+                    <div class="stat-number text-4xl font-extrabold text-indigo-600">0</div>
+                    <div class="stat-label font-semibold text-gray-700 mt-1">元使用成本</div>
+                    <p class="text-gray-500 text-sm mt-2">永久免费，无内购无会员</p>
+                </div>
+                <div class="stat-card bg-white rounded-2xl p-8 text-center shadow-md">
+                    <div class="stat-number text-4xl font-extrabold text-indigo-600">15+</div>
+                    <div class="stat-label font-semibold text-gray-700 mt-1">种音频效果</div>
+                    <p class="text-gray-500 text-sm mt-2">淡入淡出、反转、降噪、回声等</p>
+                </div>
+                <div class="stat-card bg-white rounded-2xl p-8 text-center shadow-md">
+                    <div class="stat-number text-4xl font-extrabold text-indigo-600">10x</div>
+                    <div class="stat-label font-semibold text-gray-700 mt-1">批量效率提升</div>
+                    <p class="text-gray-500 text-sm mt-2">相比手动操作，提速10倍以上</p>
+                </div>
+            </div>
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="text-xl font-bold text-center mb-6">技术优势对比</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-left">
+                        <thead class="bg-gray-100 text-gray-700">
+                            <tr><th class="px-4 py-3">功能</th><th class="px-4 py-3">舜王音频处理器</th><th class="px-4 py-3">传统桌面软件</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b"><td class="px-4 py-2">跨平台</td><td class="px-4 py-2"><i class="fas fa-check-circle text-green-500"></i> 浏览器即用</td><td class="px-4 py-2">需安装特定系统版本</td></tr>
+                            <tr class="border-b"><td class="px-4 py-2">智能裁剪</td><td class="px-4 py-2"><i class="fas fa-check-circle text-green-500"></i> AI静音检测/歌词分割</td><td class="px-4 py-2">依赖手动标记</td></tr>
+                            <tr class="border-b"><td class="px-4 py-2">批量处理</td><td class="px-4 py-2">无限制并行处理</td><td class="px-4 py-2">常有并发限制</td></tr>
+                            <tr class="border-b"><td class="px-4 py-2">费用</td><td class="px-4 py-2"><span class="font-bold text-indigo-600">完全免费</span></td><td class="px-4 py-2">部分付费/订阅</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户评价 -->
+    <section id="reviews" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-gray-900">💬 用户口碑</h2>
+                <p class="text-gray-500 mt-2">来自真实使用者的声音</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                    <div class="flex items-center gap-2 text-yellow-400 mb-3">★★★★★</div>
+                    <p class="text-gray-600 italic">“波形裁剪非常精准，智能静音检测帮我节省了大量时间，永久免费太良心了！”</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <div class="w-8 h-8 rounded-full bg-indigo-200 flex items-center justify-center"><i class="fas fa-user text-indigo-600 text-sm"></i></div>
+                        <div><span class="font-semibold">音乐制作人_阿飞</span><div class="text-xs text-gray-400">自媒体博主</div></div>
+                    </div>
+                </div>
+                <div class="testimonial-card bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                    <div class="flex items-center gap-2 text-yellow-400 mb-3">★★★★★</div>
+                    <p class="text-gray-600 italic">“均衡器和降噪效果非常专业，我的播客音质提升明显。完全免费，强烈推荐！”</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <div class="w-8 h-8 rounded-full bg-purple-200 flex items-center justify-center"><i class="fas fa-user text-purple-600 text-sm"></i></div>
+                        <div><span class="font-semibold">播客主播_欣然</span><div class="text-xs text-gray-400">喜马拉雅创作者</div></div>
+                    </div>
+                </div>
+                <div class="testimonial-card bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                    <div class="flex items-center gap-2 text-yellow-400 mb-3">★★★★★</div>
+                    <p class="text-gray-600 italic">“批量转换功能太强大了，一次性处理200个音频，效率提升十倍！”</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <div class="w-8 h-8 rounded-full bg-indigo-200 flex items-center justify-center"><i class="fas fa-user text-indigo-600 text-sm"></i></div>
+                        <div><span class="font-semibold">教育机构_李老师</span><div class="text-xs text-gray-400">课件制作</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载 CTA 区域，强调永久免费 -->
+    <section id="download" class="py-20 px-6 bg-gradient-to-r from-indigo-900 to-purple-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <i class="fas fa-gem text-5xl mb-4 opacity-80"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">永久免费 · 即刻下载</h2>
+            <p class="text-indigo-100 text-lg mb-8">舜王音频处理器承诺永久免费，无任何功能限制，本地处理保障隐私安全。</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="bg-white text-indigo-800 hover:bg-gray-100 px-8 py-3 rounded-full font-bold shadow-lg flex items-center gap-2 transition transform hover:scale-105">
+                    <i class="fab fa-windows"></i> Windows 版
+                </a>
+                <a href="#" class="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition">
+                    <i class="fab fa-apple"></i> macOS 版
+                </a>
+                <a href="#" class="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition">
+                    <i class="fab fa-linux"></i> Linux 版
+                </a>
+            </div>
+            <p class="text-indigo-200 text-sm mt-8 flex items-center justify-center gap-2"><i class="fas fa-shield-alt"></i> 完全本地处理，不上传任何音频数据</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4"><i class="fas fa-waveform text-indigo-400 text-xl"></i><span class="font-bold text-white">舜王音频处理器</span></div>
+                    <p class="text-sm">专业音频工具，永久免费使用。</p>
+                </div>
+                <div><h4 class="text-white font-semibold mb-3">产品</h4><ul class="space-y-2 text-sm"><li><a href="#features" class="footer-link hover:text-white">核心功能</a></li><li><a href="#scenes" class="footer-link hover:text-white">适用场景</a></li><li><a href="#download" class="footer-link hover:text-white">下载</a></li></ul></div>
+                <div><h4 class="text-white font-semibold mb-3">支持</h4><ul class="space-y-2 text-sm"><li><a href="#" class="footer-link hover:text-white">使用教程</a></li><li><a href="#" class="footer-link hover:text-white">常见问题</a></li><li><a href="#" class="footer-link hover:text-white">隐私政策</a></li></ul></div>
+                <div><h4 class="text-white font-semibold mb-3">联系</h4><ul class="space-y-2 text-sm"><li><i class="fas fa-envelope mr-1"></i> service@shunking.cn</li><li><i class="fas fa-phone-alt mr-1"></i> 400-999-0004</li></ul></div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-xs">
+                <p>© 2026 成都舜王科技有限公司互联网事业部 | 舜王音频处理器 | 专业音频处理工具</p>
+                <p class="mt-2">增值电信业务运营牌照：川B2-20240767号 | 蜀ICP备16023211号 | 川公网安备 51010802000011号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
